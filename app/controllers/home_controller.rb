@@ -7,7 +7,9 @@ class HomeController < ApplicationController
 	@body = params.has_key?(:Body) ? params[:Body] : "NA"
 	@from = params.has_key?(:From) ? params[:From] : "NA"
 
-	puts twilio_response
+	respond_to do |format|
+		format.xml
+	end
   end
 
   def twilio_response
