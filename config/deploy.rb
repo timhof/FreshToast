@@ -1,3 +1,5 @@
+require 'bundler/capistrano'
+
 set :application, "Fresh Toast"
 set :repository,  "git@github.com:timhof/FreshToast"
 set :domain, 'stateli.com'
